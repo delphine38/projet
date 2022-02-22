@@ -3,6 +3,7 @@
     <div :key="index" v-for="(pays, index) in pays">
       <!--<h1>Le nom du pays est : {{ pays.name.common }}</h1>-->
       <h1>Le nom du pays est : {{ pays.translations.fra.common }}</h1>
+      <img :src="pays.flags.png" alt="" />
     </div>
   </div>
 </template>
